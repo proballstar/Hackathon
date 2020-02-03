@@ -65,6 +65,7 @@ However, we can help you find your hydroflask</h2>
     height: 300px;
     }
 </style>
+    <div id="demon">
 <input>
 <p></p>
 
@@ -86,11 +87,15 @@ However, we can help you find your hydroflask</h2>
 </table>
 <button>Found </button>
 Found:<input type="checkbox" onclick="as("></input>
+</div>
 
 <script type="text/javascript">
  function as{
-    document.getElementbyId("bob").innerHTML
- }
+    document.getElementById('bob').setAttribute("width", "0px");
+ };
+ function noob{
+   document.getElementById('demon').setAttribute("width", "0px");  
+ };
 </script>
 </body>
 
