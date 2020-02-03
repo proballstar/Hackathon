@@ -24,6 +24,15 @@ def my_page():
     responce2 =  request.args.get('email')
     responce3 = request.args.get('location')
     responce4 = request.args.get('image')
+    checkbox=request.args.get('checkbox') 
+   print("Found? %d (var1.get()))
+
+Label(master, text="Status").grid(row=0, sticky=W)
+var1 = IntVar()
+Checkbutton(master, text="Found.", variable=var1).grid(row=1, sticky=W)
+Button(master, text='Quit', command=master.quit).grid(row=3, sticky=W, pady=4)
+Button(master, text='Show', command=var_states).grid(row=4, sticky=W, pady=4)
+mainloop()
 
     return render_template('home.html', time= date_time)
 
