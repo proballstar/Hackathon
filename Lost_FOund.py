@@ -53,7 +53,9 @@ def my_page2():
     date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
 
     return render_template('blog.html', time= date_time, user = responce, email = responce2, location = responce3, image= responce4)
-
+@app.route('/homepage')
+         def my_page3():
+         return render_template('homepage.html')
 @app.route('/')
 def index():
     return redirect('/home')
@@ -70,6 +72,6 @@ def double(number):
 
 
 
-app.run(debug=True)
+app.run(debug=True, )
 link
 rel = "stylesheet"
